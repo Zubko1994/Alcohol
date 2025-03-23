@@ -1,0 +1,62 @@
+.beer__wrapper-video {
+    padding: 52px 10px 38px 10px;
+}
+
+.video__kind {
+    color: rgb(26, 26, 26);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.arrow-cover {
+    position: relative;
+}
+
+.arrow-before {
+    position: absolute;
+    content: url("../image/arrowcover.svg");
+    margin-right: 24px;
+    background-color: rgb(255, 255, 255);
+    left: 1050px;
+    top: -5px;
+    padding: 3px;
+    width: 31px;
+    height: 31px;
+    border: 1px dashed rgb(90, 89, 89);
+    cursor: pointer;
+}
+
+.arrow-before-active {
+    position: absolute;
+    content: url("../image/arrowcoveract.svg");
+    margin-right: 24px;
+    background-color: rgb(255, 255, 255);
+    left: 1050px;
+    top: -5px;
+    padding: 9px;
+    border: 1px dashed rgb(90, 89, 89);
+    cursor: pointer;
+    display: block;
+    width: 31px;
+    height: 31px;
+}
+
+.videos {
+    display: none;
+}
+
+.videos-active {
+    display: block;
+    margin-bottom: 50px;
+
+}
+
+.video_line {
+    border: 1px solid rgb(12, 11, 11);
+    width: 1079px;
+    margin-bottom: 42px;
+}
