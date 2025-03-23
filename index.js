@@ -60,3 +60,4 @@ elem3.addEventListener("click", function () {
             tabl3.classList.replace("kinds__description-active", "kinds__description3");
         }
 })
+

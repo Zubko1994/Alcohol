@@ -86,6 +86,12 @@
   width: 100%;
 }
 
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .footer__nav {
   display: flex;
   flex: 0 1 405px;
