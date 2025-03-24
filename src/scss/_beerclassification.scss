@@ -14,7 +14,7 @@ summary:before {
 }
 
 details[open] summary:before {
-    content: url("../image/summuryafter.svg");
+    content: url("../../public/assets/image/summuryafter.svg");
 }
 
 summary:before,
@@ -153,7 +153,7 @@ td {
 
 .summary-before {
     position: absolute;
-    content: url("../image/beforesummury.svg");
+    content: url("../../public/assets/image/beforesummury.svg");
     margin-right: 24px;
     background-color: black;
     left: 681px;
@@ -165,7 +165,7 @@ td {
 
 .summary-before__active {
     position: absolute;
-    content: url("../image/summuryafter.svg");
+    content: url("../../public/assets/image/summuryafter.svg");
     margin-right: 24px;
     background-color: black;
     left: 681px;
@@ -176,7 +176,7 @@ td {
 }
 
 details[open] summary:before {
-    content: url("../image/summuryafter.svg");
+    content: url("../../public/assets/image/beforesummury.svg");
     cursor: pointer;
 }
 
