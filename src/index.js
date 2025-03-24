@@ -3,7 +3,8 @@
 const elem = document.querySelector(".summary-before");
 const tabl = document.querySelector(".kinds__description");
 
-    elem.addEventListener("click", function () {
+    elem.addEventListener("click", function (e) {
+        console.log(e.currentTarget.parentElement.parentElement.parentElement)
         let marker = elem.classList.replace(
             "summary-before",
             "summary-before__active"
