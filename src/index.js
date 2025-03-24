@@ -13,6 +13,16 @@ elem.forEach((elem) => {
     });
 });
 
+
+const button = document.querySelectorAll(".beer__item")
+
+button.forEach((button) => {
+    button.addEventListener('click', function(){
+        button.classList.add('beer__item-active')
+
+    })
+})
+
 // const elem2 = document.querySelector(".summary-before2");
 // const tabl2 = document.querySelector(".kinds__description2");
 // elem2.addEventListener("click", function () {
