@@ -23,6 +23,9 @@ button.forEach((button) => {
     })
 })
 
+
+
+
 // const elem2 = document.querySelector(".summary-before2");
 // const tabl2 = document.querySelector(".kinds__description2");
 // elem2.addEventListener("click", function () {

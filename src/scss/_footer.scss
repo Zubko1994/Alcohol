@@ -23,7 +23,10 @@
 
 .footer__nav {
     display: flex;
-    flex: 0 1 405px;
+    padding-left: 30px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-footer {
@@ -33,10 +36,12 @@
 .footer__navigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px 155px;
+    justify-content: space-between;
+    gap: 20px 20px;
     max-height: 62px;
-    padding-right: 75px;
-    padding-top: 76px;
+    // padding-right: 75px;
+    // max-width: 405px;
+    margin-left: 23px;
 }
 
 .footer__item {
@@ -51,4 +56,73 @@
 
 .logo__footer {
     padding-top: 58px;
+}
+
+.footer__image {
+    // max-width: 320px;
+    // max-height: 214px;
+    background-image: url("/dist/assets/image/night.png");
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1120px) {
+    .container {
+        max-width: 920px;
+    }
+
+    .footer__navigation {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 792px;
+    }
+
+    .footer__image img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 31px;
+    }
+
+    .logo__footer {
+        padding-top: 28px;
+    }
+
+    .footer__wrapper {
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 335px;
+    }
+
+    .footer__navigation {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+        gap: 10px;
+    }
+
+    .footer__item {
+        font-size: 9px;
+        line-height: 11px;
+        text-align: left;
+    }
+
+    .footer__nav {
+        padding-left: 23px;
+        padding-right: 20px;
+    }
+
+    .footer__image {
+        height: 100%;
+    }
 }

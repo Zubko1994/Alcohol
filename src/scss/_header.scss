@@ -20,10 +20,17 @@
     padding-top: 51px;
     // width: 732px;
 }
+.menu__item {
+    padding: 5px 10px;
+}
 
 .menu__item:hover {
     cursor: pointer;
     text-decoration: underline;
+    background: rgb(98, 0, 0);
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
 .autorization-active {
@@ -35,7 +42,72 @@
     transform: scale(1.1, 1.1);
     background-color: white;
     cursor: pointer;
-    
+}
+
+.burger__menu {
+    width: 37px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    background: none;
+}
+
+.burger__menu > span {
+    width: 100%;
+    display: block;
+    height: 4px;
+    background: black;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: all 0.3s linear;
+}
+
+.burger__menu::after,
+.burger__menu::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 37px;
+    height: 4px;
+    background: black;
+    transition: all 0.3s linear;
+}
+
+.burger__menu::after {
+    left: 0;
+    bottom: 0;
+}
+
+.burger__menu::before {
+    right: 0;
+    top: 0;
+}
+
+.burger {
+    display: none;
+}
+
+.burger-active span {
+    opacity: 0;
+}
+
+.burger-active::after {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    transition: all 0.3s linear;
+}
+
+.burger-active::before {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+    transition: all 0.3s linear;
 }
 
 .line {
@@ -68,4 +140,58 @@
     gap: 12px;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1420px) {
+    .container {
+        max-width: 1220px;
+    }
+
+    .wrap-line {
+        display: none;
+    }
+}
+
+@media (max-width: 1135px) {
+    .container {
+        max-width: 935px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 792px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 31px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .autorization-active {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 335px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 30px;
+    }
 }
